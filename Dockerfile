@@ -70,6 +70,8 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
   apt update -y && \
   apt install -y runit /src/*.deb
 
+EXPOSE 8007
+
 # Add default configs
 ADD /pbs/ /etc/proxmox-backup-default/
 
